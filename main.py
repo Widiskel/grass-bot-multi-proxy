@@ -77,9 +77,11 @@ async def connect_to_wss(socks5_proxy, user_id):
                         pong_response = {"id": message["id"], "origin_action": "PONG"}
                         logger.debug(pong_response)
                         await websocket.send(json.dumps(pong_response))
+
+                        existing_proxies = set()
                         with open("super_proxy.txt", "r") as file:
                             existing_proxies.update(line.strip() for line in file)
-                        existing_proxies.add(socks5_proxy)
+                        existing_proxies.add(socks5_proxy[len("socks5://"):])
                         with open("super_proxy.txt", "w") as file:
                             for proxy in existing_proxies:
                                 file.write(proxy + "\n")
