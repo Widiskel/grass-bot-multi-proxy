@@ -77,6 +77,10 @@ async def connect_to_wss(socks5_proxy, user_id):
                         pong_response = {"id": message["id"], "origin_action": "PONG"}
                         logger.debug(pong_response)
                         await websocket.send(json.dumps(pong_response))
+                        with open("super_proxy.txt", "a") as file:
+                            file.write(socks5_proxy + "\n")
+
+        
         except Exception as e:
             logger.error(e)
             if "Empty connect reply" in str(e):
