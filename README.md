@@ -1,6 +1,6 @@
 # GetGras Bot With Multiple Proxy
 
-Get Gras bot with multiple proxy which auto filter dead proxy.
+Get Gras bot with multiple proxy which auto filter dead proxy from file, and auto save powerfull proxy.
 
 
 ## installation
