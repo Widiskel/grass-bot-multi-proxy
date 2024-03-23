@@ -37,7 +37,7 @@ then insert this code
 
 #### usage command
 where to get proxy list ?
-open [this](https://github.com/monosans/proxy-list/blob/main/proxies_anonymous/socks5.txt)
+open [this](https://github.com/monosans/proxy-list/blob/main/proxies_anonymous/socks5.txt) and
 copy proxy from that site to proxy_list.txt you can use ```nano```
 ```nano proxy_list.txt```
 that site is update every 30 minutes, so you can add many proxy to your proxylist based on that site scrap
