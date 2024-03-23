@@ -37,18 +37,10 @@ then insert this code
 
 #### usage command
 where to get proxy list ?
-run 
-```bash
-rm proxy_list.txt
-curl "https://sunny9577.github.io/proxy-scraper/generated/socks5_proxies.txt" > proxy_list.txt
-```
-it will generate new file ```proxy_list.txt```
-
-or 
 open [this](https://github.com/monosans/proxy-list/blob/main/proxies_anonymous/socks5.txt)
 copy proxy from that site to proxy_list.txt you can use ```nano```
 ```nano proxy_list.txt```
-
+that site is update every 30 minutes, so you can add many proxy to your proxylist based on that site scrap
 now let start the running process
 run ```python main.py```.
 
