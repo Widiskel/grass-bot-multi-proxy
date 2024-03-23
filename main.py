@@ -117,7 +117,7 @@ socks5_proxy_list = []
 async def main():
     with open("user_id.txt", "r") as file:
         _user_id = file.read().strip()
-    # put the proxy in a file in the format socks5://username:password@ip:port or socks5://ip:port
+    # put the proxy in a file in the format ip:port
     with open("proxy_list.txt", "r") as file:
         socks5_proxy_list = file.read().splitlines()
     # auto add socks5://
