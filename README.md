@@ -41,6 +41,7 @@ open [this](https://github.com/monosans/proxy-list/blob/main/proxies_anonymous/s
 copy proxy from that site to proxy_list.txt you can use ```nano```
 ```nano proxy_list.txt```
 that site is update every 30 minutes, so you can add many proxy to your proxylist based on that site scrap
+
 now let start the running process
 run ```python main.py```.
 
